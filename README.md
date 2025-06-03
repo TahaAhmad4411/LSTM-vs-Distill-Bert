@@ -15,3 +15,27 @@
   •	Perform a qualitative analysis.
   •	Report the model performance on the testing set.
 And at last, created a report summary of the complete processed for both model training and testing and also mention qualitative and quantitative analysis of both models’ performance.
+
+###  Models Information
+Two models were utilized in this project:
+- **LSTM**
+- **DistilBERT**
+
+###  Architecture Used
+- **LSTM:** BiLSTM (128 + 64 units)
+- **DistilBERT:** Pre-trained transformer model
+
+###  LSTM Model Details
+- **Vocabulary Size:** 10,000  
+- **Max Sequence Length:** 300  
+- **Embeddings:** Pre-trained GloVe vectors (300D)  
+- **Architecture:**  
+  - BiLSTM layers with 128 and 64 units  
+  - Batch Normalization  
+  - Dropout layers  
+  - Dense Softmax output layer  
+
+###  Training Details
+- **Loss Function:** `sparse_categorical_crossentropy`  
+- **Optimizer:** Adam (learning rate = 0.0005)  
+- **Epochs:** 40 (with Early Stopping)
