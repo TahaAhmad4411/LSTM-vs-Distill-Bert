@@ -2,19 +2,38 @@
  This project aimed for testing the performance of LSTM and Transformers(Keeping in view of computation capacity, we used Distill Bert). Another reason was due to accuracy issues. 
  Our goal on each model was to have an accuracy of at least 60% on testing data.
 
- # About the Dataset
- The dataset contains text, each assigned a label with its corresponding genre and has one of the following labels
- 'Promotion','Legal','Lyrical/Prose','Forum','Argumentation/Opinion','Instruction','News','Information/Explanation','Other'
- The dataset is contained both in English and Slovenian language, since the Solvenian dataset was quite low as compared to English, the Slovenian dataset was filtered out.
- Then applied deep learning-based classifiers to effectively predict the label of each text and performed the following tasks:
-  •	Randomize the data and split it into training and testing sets.
-  •	2 models were considered, one based on LSTM and another on transformers.
-  •	Utilized pre-trained word embeddings in models.
-  •	Fine-tuned the hyperparameters for optimal performance.
-  •	Compared the performances of both models created in your experiments.
-  •	Perform a qualitative analysis.
-  •	Report the model performance on the testing set.
-And at last, created a report summary of the complete processed for both model training and testing and also mention qualitative and quantitative analysis of both models’ performance.
+ ### Dataset Overview and Project Workflow
+
+- The dataset contains text samples labeled with one of the following genres:
+  - `Promotion`
+  - `Legal`
+  - `Lyrical/Prose`
+  - `Forum`
+  - `Argumentation/Opinion`
+  - `Instruction`
+  - `News`
+  - `Information/Explanation`
+  - `Other`
+
+- The original dataset includes samples in both **English** and **Slovenian**.
+- Due to a significantly smaller portion of Slovenian samples, only the **English** dataset was used for training and evaluation.
+
+### Data Processing and Modeling Steps
+
+- Randomized and split the dataset into **training** and **testing** sets.
+- Implemented **two deep learning models**:
+  - One based on **LSTM**
+  - One based on **Transformer** architecture (DistilBERT)
+- Used **pre-trained word embeddings** to enhance model understanding.
+- Performed **hyperparameter tuning** for optimal model performance.
+- Conducted a **comparative evaluation** of both models.
+- Performed **qualitative analysis** of predictions to interpret model behavior.
+- Evaluated and reported **quantitative performance metrics** on the testing set.
+- Compiled a **comprehensive summary report** covering:
+  - Data preprocessing  
+  - Model training  
+  - Testing results  
+  - Qualitative and quantitative analysis of both models
 
 ###  Models Information
 Two models were utilized in this project:
